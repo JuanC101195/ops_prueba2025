@@ -1,0 +1,12 @@
+﻿# Entorno virtual
+.venv/
+venv/
+
+# Configuración sensible
+.env
+*.db
+
+# Resultados temporales
+workdir/
+__pycache__/
+*.pyc
