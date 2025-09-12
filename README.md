@@ -57,9 +57,12 @@ En el directorio workdir/ encontrarás:
 
 - homonimos.csv / .xlsx: lista completa de homónimos  
 - homonimos_filtrados.csv / .xlsx: homónimos con score ≥90  
-- esultados.csv / .xlsx: direcciones geocodificadas  
-- esultados_unicos.csv / .xlsx: resultados únicos por dirección formateada  
-- esultados.db: base de datos SQLite con 3 tablas:  
+- 
+esultados.csv / .xlsx: direcciones geocodificadas  
+- 
+esultados_unicos.csv / .xlsx: resultados únicos por dirección formateada  
+- 
+esultados.db: base de datos SQLite con 3 tablas:  
   - homonimos_filtrados  
   - geocoding  
   - geocoding_unicos  
@@ -68,7 +71,8 @@ En el directorio workdir/ encontrarás:
 ---
 
 ## 🧪 Validación del filtro
-Script incluido: alidate_filter.py  
+Script incluido: 
+alidate_filter.py  
 
 Ejecutar:
 
@@ -113,6 +117,33 @@ Ejecutar pruebas unitarias:
     pytest -q
 
 Incluye pruebas de similitud y validación del filtro.
+
+---
+
+## 📋 Homónimos filtrados (primeras 20 filas)
+
+original                 homonimo                score
+Carrera 70 # 26A - 33    Carrera 70 # 26A - 33   100.0
+Carrera 70 # 26A - 33    Carrera 70 # 26A 33     100.0
+Carrera 70 # 26A - 33    Carrera 70 26A - 33     100.0
+Carrera 70 # 26A - 33    Carrera 70 26A 33       100.0
+Carrera 70 # 26A - 33    Carrera 70 No 26A - 33  100.0
+Carrera 70 # 26A - 33    Carrera 70 No 26A 33    100.0
+Carrera 70 # 26A - 33    Carrera 70 Nro 26A - 33 100.0
+Carrera 70 # 26A - 33    Carrera 70 Nro 26A 33   100.0
+Carrera 70 # 26A - 33    Carrera 70 Num 26A - 33 100.0
+Carrera 70 # 26A - 33    Carrera 70 Num 26A 33   100.0
+Carrera 70 # 26A - 33    Carrera 70 Numero 26A - 33 100.0
+Carrera 70 # 26A - 33    Carrera 70 Numero 26A 33   100.0
+Carrera 70 # 26A - 33    Cr 70 # 26A - 33        100.0
+Carrera 70 # 26A - 33    Cr 70 # 26A 33          100.0
+Carrera 70 # 26A - 33    Cr 70 26A - 33          100.0
+Carrera 70 # 26A - 33    Cr 70 26A 33            100.0
+Carrera 70 # 26A - 33    Cr 70 No 26A - 33       100.0
+Carrera 70 # 26A - 33    Cr 70 No 26A 33         100.0
+Carrera 70 # 26A - 33    Cr 70 Nro 26A - 33      100.0
+Carrera 70 # 26A - 33    Cr 70 Nro 26A 33        100.0
+
 
 ---
 
