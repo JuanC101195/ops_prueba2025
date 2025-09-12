@@ -1,0 +1,9 @@
+boto3
+python-dotenv
+PyPDF2
+rapidfuzz
+googlemaps
+folium
+openpyxl
+pandas
+pytest

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f2dba3eeb770757844dc2909af21cdbf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f2dba3eeb770757844dc2909af21cdbf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f2dba3eeb770757844dc2909af21cdbf = L.map(
+                "map_f2dba3eeb770757844dc2909af21cdbf",
+                {
+                    center: [6.2286996, -75.591641],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_97ca663dc9b757c4316b832c7fdb9e50 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_97ca663dc9b757c4316b832c7fdb9e50.addTo(map_f2dba3eeb770757844dc2909af21cdbf);
+        
+    
+            var marker_8756315be3b60bc1e2cc95f8658bf6f4 = L.marker(
+                [6.2286996, -75.591641],
+                {
+}
+            ).addTo(map_f2dba3eeb770757844dc2909af21cdbf);
+        
+    
+        var popup_e26e80921ea142fec3af2cfee3b2f8c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15234d59e622be43c09260887e6d62fe = $(`<div id="html_15234d59e622be43c09260887e6d62fe" style="width: 100.0%; height: 100.0%;">Cra. 70 # 26A-33, Medellín, Belén, Medellín, Antioquia, Colombia<br/>(Lat: 6.228700, Lng: -75.591641)<br/>Score: 100.0</div>`)[0];
+                popup_e26e80921ea142fec3af2cfee3b2f8c5.setContent(html_15234d59e622be43c09260887e6d62fe);
+            
+        
+
+        marker_8756315be3b60bc1e2cc95f8658bf6f4.bindPopup(popup_e26e80921ea142fec3af2cfee3b2f8c5)
+        ;
+
+        
+    
+    
+            marker_8756315be3b60bc1e2cc95f8658bf6f4.bindTooltip(
+                `<div>
+                     Carrera 70 # 26A - 33 (6.2287, -75.5916) | score 100.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
