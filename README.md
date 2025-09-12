@@ -122,27 +122,30 @@ Incluye pruebas de similitud y validación del filtro.
 
 ## 📋 Homónimos filtrados (primeras 20 filas)
 
-original                 homonimo                score
-Carrera 70 # 26A - 33    Carrera 70 # 26A - 33   100.0
-Carrera 70 # 26A - 33    Carrera 70 # 26A 33     100.0
-Carrera 70 # 26A - 33    Carrera 70 26A - 33     100.0
-Carrera 70 # 26A - 33    Carrera 70 26A 33       100.0
-Carrera 70 # 26A - 33    Carrera 70 No 26A - 33  100.0
-Carrera 70 # 26A - 33    Carrera 70 No 26A 33    100.0
-Carrera 70 # 26A - 33    Carrera 70 Nro 26A - 33 100.0
-Carrera 70 # 26A - 33    Carrera 70 Nro 26A 33   100.0
-Carrera 70 # 26A - 33    Carrera 70 Num 26A - 33 100.0
-Carrera 70 # 26A - 33    Carrera 70 Num 26A 33   100.0
-Carrera 70 # 26A - 33    Carrera 70 Numero 26A - 33 100.0
-Carrera 70 # 26A - 33    Carrera 70 Numero 26A 33   100.0
-Carrera 70 # 26A - 33    Cr 70 # 26A - 33        100.0
-Carrera 70 # 26A - 33    Cr 70 # 26A 33          100.0
-Carrera 70 # 26A - 33    Cr 70 26A - 33          100.0
-Carrera 70 # 26A - 33    Cr 70 26A 33            100.0
-Carrera 70 # 26A - 33    Cr 70 No 26A - 33       100.0
-Carrera 70 # 26A - 33    Cr 70 No 26A 33         100.0
-Carrera 70 # 26A - 33    Cr 70 Nro 26A - 33      100.0
-Carrera 70 # 26A - 33    Cr 70 Nro 26A 33        100.0
+```text
+original                           homonimo                           score
+----------------------------------- ----------------------------------- -----
+Carrera 70 # 26A - 33              Carrera 70 # 26A - 33               100.0
+Carrera 70 # 26A - 33              Carrera 70 # 26A 33                 100.0
+Carrera 70 # 26A - 33              Carrera 70 26A - 33                 100.0
+Carrera 70 # 26A - 33              Carrera 70 26A 33                   100.0
+Carrera 70 # 26A - 33              Carrera 70 No 26A - 33              100.0
+Carrera 70 # 26A - 33              Carrera 70 No 26A 33                100.0
+Carrera 70 # 26A - 33              Carrera 70 Nro 26A - 33             100.0
+Carrera 70 # 26A - 33              Carrera 70 Nro 26A 33               100.0
+Carrera 70 # 26A - 33              Carrera 70 Num 26A - 33             100.0
+Carrera 70 # 26A - 33              Carrera 70 Num 26A 33               100.0
+Carrera 70 # 26A - 33              Carrera 70 Numero 26A - 33          100.0
+Carrera 70 # 26A - 33              Carrera 70 Numero 26A 33            100.0
+Carrera 70 # 26A - 33              Cr 70 # 26A - 33                    100.0
+Carrera 70 # 26A - 33              Cr 70 # 26A 33                      100.0
+Carrera 70 # 26A - 33              Cr 70 26A - 33                      100.0
+Carrera 70 # 26A - 33              Cr 70 26A 33                        100.0
+Carrera 70 # 26A - 33              Cr 70 No 26A - 33                   100.0
+Carrera 70 # 26A - 33              Cr 70 No 26A 33                     100.0
+Carrera 70 # 26A - 33              Cr 70 Nro 26A - 33                  100.0
+Carrera 70 # 26A - 33              Cr 70 Nro 26A 33                    100.0
+
 
 
 ---
