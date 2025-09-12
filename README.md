@@ -1,4 +1,9 @@
 ﻿# 🚀 Prueba Técnica – Operaciones 2025
+[![Tests](https://github.com/JuanC101195/ops_prueba2025/actions/workflows/tests.yml/badge.svg)](https://github.com/JuanC101195/ops_prueba2025/actions/workflows/tests.yml)
+![Version](https://img.shields.io/badge/version-v1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
+📌 Pipeline para procesamiento, normalización y geocodificación de direcciones.
 ![Run Tests](https://github.com/JuanC101195/ops_prueba2025/actions/workflows/tests.yml/badge.svg)
 > Pipeline para procesamiento, normalización y geocodificación de direcciones
 
