@@ -1,4 +1,5 @@
 ﻿# 🚀 Prueba Técnica – Operaciones 2025
+![Run Tests](https://github.com/JuanC101195/ops_prueba2025/actions/workflows/tests.yml/badge.svg)
 > Pipeline para procesamiento, normalización y geocodificación de direcciones
 
 ---
