@@ -150,6 +150,47 @@ Carrera 70 # 26A - 33              Cr 70 Nro 26A 33                    100.0
 
 ---
 
-## 👤 Autor
+## ☁️ Uso con AWS S3
+
+El pipeline también soporta la carga de archivos desde **AWS S3** antes de procesarlos.
+
+### 🔐 Credenciales
+Por motivos de seguridad, **las credenciales de AWS no están incluidas** en este repositorio.  
+Para probar el flujo con S3, configure sus propias credenciales en el entorno:
+
+```powershell
+# Configurar variables de entorno en PowerShell
+setx AWS_ACCESS_KEY_ID "su_access_key"
+setx AWS_SECRET_ACCESS_KEY "su_secret_key"
+setx AWS_DEFAULT_REGION "us-east-2"
+setx S3_BUCKET "nombre_de_su_bucket"
+setx S3_PREFIX "uploads/"
+
+---
+##📤 Subida de archivos
+Subir un archivo de prueba (ejemplo: ejemplo.txt) al bucket en el prefijo configurado:
+aws s3 cp .\sample_data\ejemplo.txt s3://nombre_de_su_bucket/uploads/ejemplo.txt
+
+---
+##▶ Ejecución del pipeline con S3
+
+Ejecutar el pipeline indicando la opción --s3:
+
+python -m app.main run `
+  --inputs ejemplo.txt `
+  --workdir .\workdir\from_s3 `
+  --threshold 90 `
+  --s3
+
+
+El programa descargará automáticamente el archivo desde S3, lo procesará y generará los artefactos habituales:
+
+homonimos.csv, resultados.csv, resultados_unicos.csv
+
+mapa.html, mapa_unicos.html
+
+resultados.db
+---
+##👤 Autor
 Proyecto desarrollado por **Juan Esteban Cardozo Rivera**  
 Prueba Técnica de Operaciones 2025.  
